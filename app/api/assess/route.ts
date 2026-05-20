@@ -110,12 +110,13 @@ export async function POST(req: NextRequest): Promise<Response> {
         )
 
         const LLM_TIMEOUT_MS = 25_000
+        let llmTimeoutId: ReturnType<typeof setTimeout>
         const llmOutput = await Promise.race([
           synthesizeWithRetry(raw),
-          new Promise<never>((_, reject) =>
-            setTimeout(() => reject(new Error("Assessment timed out — try again")), LLM_TIMEOUT_MS)
-          ),
-        ])
+          new Promise<never>((_, reject) => {
+            llmTimeoutId = setTimeout(() => reject(new Error("Assessment timed out — try again")), LLM_TIMEOUT_MS)
+          }),
+        ]).finally(() => clearTimeout(llmTimeoutId))
         const assessment = mergeAssessment(llmOutput, raw, sourcesUsed, errors)
 
         logAssessment({
