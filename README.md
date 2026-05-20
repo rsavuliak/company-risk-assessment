@@ -104,11 +104,62 @@ If Companies House returns no results, an inline error message is shown. If it r
 `PROMPT_VERSION` is a constant in `lib/schema.ts`, stamped on every assessment output and log entry. Each JSONL log line includes `prompt_version`, `confidence_score`, `overall_risk`, and `raw_data_hash`. To evaluate a change: run the same inputs (fixture files in `__tests__/fixtures/`) before and after, compare confidence score distributions and risk classifications. The `raw_data_hash` ensures you're comparing against identical source data.
 
 ## Example Inputs and Outputs
+------------------------------------------------------
+**Input:**
+Registration Number: 15259143
+
+**Output:**
+
+TUNIC & CO UK LIMITED
+15259143 · england-wales
+Low Risk
+
+**Company Details**
+
+Status: Active
+Incorporated: 3 November 2023 (30 months ago)
+Address: 6-7 St. John's Lane, London, EC1M 4BJ
+Filing history: 10 filings
+Directors:
+
+BARAWID, Robin Nichol
+director · appointed Nov 2023
+
+GOULIMIS, Nicky Maria
+director · appointed Nov 2023
+------------------------------------------------------
+**Input:**
+BADEKABINER LIMITED
+
+**Output:**
+BADEKABINER LIMITED
+07560766 · england-wales
+High Risk
+
+**Company Details**
+
+Status: Insolvency-proceedings
+Incorporated: 11 March 2011 (182 months ago)
+Address: 3rd Floor 10 South Parade, Leeds, LS1 5QS
+Filing history: 24 filings
+
+Directors
+
+FORSHAW, Andrew Robert
+director · appointed Apr 2011
+15 other appointments
+Prolific
+
+HAMPTON, Michael Robin
+director · appointed Apr 2011
+10 other appointments
+Prolific
+
+NICOLSON, Sean Torquil
+director · appointed Mar 2011
+282 other appointments
+Prolific
+------------------------------------------------------
 
 See `__tests__/fixtures/` for representative inputs and expected LLM output structure.
 
-| Input                       | Behaviour                                         |
-| --------------------------- | ------------------------------------------------- |
-| Name: `"Marks and Spencer"` | Disambiguation list (multiple CH matches)         |
-| Name: `"Tunic Pay"`         | Disambiguates to TUNIC & CO UK LIMITED (15259143) |
-| Reg number: `"00000006"`    | Direct lookup, no disambiguation                  |
