@@ -1,0 +1,25 @@
+{
+  "company_name": "THORNFIELD CONSULTING LIMITED",
+  "company_number": "12345678",
+  "company_status": "active",
+  "type": "ltd",
+  "date_of_creation": "2020-03-15",
+  "jurisdiction": "england-wales",
+  "registered_office_address": {
+    "address_line_1": "123 Business Park",
+    "locality": "London",
+    "postal_code": "EC1A 1BB",
+    "country": "England"
+  },
+  "sic_codes": ["70229"],
+  "accounts": {
+    "next_due": "2025-12-31",
+    "last_accounts": { "made_up_to": "2023-03-31", "type": "total-exemption-full" }
+  },
+  "confirmation_statement": {
+    "last_made_up_to": "2024-03-15",
+    "next_due": "2025-03-29"
+  },
+  "has_insolvency_history": false,
+  "has_charges": false
+}

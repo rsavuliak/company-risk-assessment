@@ -1,0 +1,18 @@
+{
+  "query": "\"THORNFIELD CONSULTING LIMITED\" UK (news OR complaints OR allegations OR regulatory action)",
+  "results": [
+    {
+      "title": "Thornfield Consulting wins public sector contract",
+      "url": "https://example-news.co.uk/thornfield-consulting-contract",
+      "content": "THORNFIELD CONSULTING LIMITED has been awarded a three-year management consulting contract with a UK government department, according to Companies House filings.",
+      "score": 0.82
+    },
+    {
+      "title": "UK business registry update",
+      "url": "https://example-registry.co.uk/update",
+      "content": "THORNFIELD CONSULTING LIMITED confirmed its registered address at 123 Business Park, London remains active for the current financial year.",
+      "score": 0.61
+    }
+  ],
+  "response_time": 1.23
+}

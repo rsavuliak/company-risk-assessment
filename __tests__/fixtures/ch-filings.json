@@ -1,0 +1,29 @@
+{
+  "filing_history_status": "filing-history-available",
+  "items_per_page": 20,
+  "start_index": 0,
+  "total_count": 3,
+  "items": [
+    {
+      "category": "confirmation-statement",
+      "date": "2024-03-20",
+      "description": "confirmation-statement-with-no-updates",
+      "type": "CS01",
+      "transaction_id": "MzM1NjI2NTkwOWFkaXF6a2N4"
+    },
+    {
+      "category": "accounts",
+      "date": "2023-12-15",
+      "description": "accounts-with-accounts-type-total-exemption-full",
+      "type": "AA",
+      "transaction_id": "MzM1NjI2NTkwOWFkaXF6a2N5"
+    },
+    {
+      "category": "incorporation",
+      "date": "2020-03-15",
+      "description": "incorporation-company",
+      "type": "IN01",
+      "transaction_id": "MzM1NjI2NTkwOWFkaXF6a2N6"
+    }
+  ]
+}

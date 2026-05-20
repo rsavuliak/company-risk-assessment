@@ -1,0 +1,32 @@
+{
+  "company": {
+    "name": "THORNFIELD CONSULTING LIMITED",
+    "registration_number": "12345678",
+    "jurisdiction": "england-wales",
+    "incorporation_date": "2020-03-15",
+    "status": "active",
+    "address": "123 Business Park, London, EC1A 1BB"
+  },
+  "risk_indicators": {
+    "company_age_months": 62,
+    "is_recently_incorporated": false,
+    "filing_history_count": 3,
+    "has_limited_filing_history": false,
+    "directors": [
+      {
+        "name": "SMITH, Jane Elizabeth",
+        "role": "director",
+        "appointed_on": "2020-03-15",
+        "other_appointments_count": 1,
+        "is_prolific_director": false
+      }
+    ],
+    "adverse_media_snippets": [],
+    "has_adverse_media": false
+  },
+  "risk_score": {
+    "overall": "low",
+    "explanation": "Active company with clean compliance record, regular filings, and no adverse media.",
+    "contributing_factors": []
+  }
+}

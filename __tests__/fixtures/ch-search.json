@@ -1,0 +1,36 @@
+{
+  "hits": 3,
+  "items_per_page": 10,
+  "kind": "search#companies",
+  "start_index": 0,
+  "total_results": 3,
+  "items": [
+    {
+      "title": "THORNFIELD CONSULTING LIMITED",
+      "company_number": "12345678",
+      "company_status": "active",
+      "company_type": "ltd",
+      "date_of_creation": "2020-03-15",
+      "address_snippet": "123 Business Park, London, EC1A 1BB",
+      "links": { "self": "/company/12345678" }
+    },
+    {
+      "title": "THORNFIELD CONSULTING (SCOTLAND) LIMITED",
+      "company_number": "SC987654",
+      "company_status": "active",
+      "company_type": "ltd",
+      "date_of_creation": "2018-06-01",
+      "address_snippet": "45 George Street, Edinburgh, EH2 2LR",
+      "links": { "self": "/company/SC987654" }
+    },
+    {
+      "title": "OLD THORNFIELD CONSULTING LTD",
+      "company_number": "00111222",
+      "company_status": "dissolved",
+      "company_type": "ltd",
+      "date_of_creation": "2005-01-10",
+      "address_snippet": "1 Old Street, London, EC1V 9AA",
+      "links": { "self": "/company/00111222" }
+    }
+  ]
+}
