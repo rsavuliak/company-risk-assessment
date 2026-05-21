@@ -127,6 +127,7 @@ director · appointed Nov 2023
 
 GOULIMIS, Nicky Maria
 director · appointed Nov 2023
+
 ------------------------------------------------------
 **Input:**
 BADEKABINER LIMITED
@@ -159,6 +160,7 @@ NICOLSON, Sean Torquil
 director · appointed Mar 2011
 282 other appointments
 Prolific
+
 ------------------------------------------------------
 
 See `__tests__/fixtures/` for representative inputs and expected LLM output structure.
